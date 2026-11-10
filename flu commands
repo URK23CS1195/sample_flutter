@@ -1,0 +1,13 @@
+C:\Users\ASUS\Desktop\flutter> flutter doctor                                                             
+>>                                                                        
+>> flutter create flutter_practical                          
+>>                   
+>> cd flutter_practical                                                   
+>>                        
+>> code .
+>> 
+>> flutter pub get
+>> 
+>> flutter run -d chrome
+>> 
+>> flutter build web
