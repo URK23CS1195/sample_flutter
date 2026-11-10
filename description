@@ -1,0 +1,97 @@
+You have several Flutter experiments in your code. I'll explain each section in simple words, including what the widget does and when to use it. These are short descriptions you can write in your practical record or use in a viva.
+
+## 1. Widgets and Layouts
+
+Purpose: To display different UI elements together in an organized layout.
+
+- Card: Creates a box-like container to display related information.
+- Row: Arranges widgets horizontally (left to right).
+- Column: Arranges widgets vertically (top to bottom).
+- Icon: Displays a visual symbol, such as a shopping bag.
+- Text: Displays text on the screen.
+
+In your example: A Card displays a shopping bag icon, the product name Apple, and its description Fresh Fruit.
+
+## 2. Responsive UI Design
+
+Purpose: To automatically adjust the user interface according to the screen size.
+
+- Expanded: Makes a widget occupy the available space.
+- LayoutBuilder: Provides the available screen constraints to build a responsive layout.
+- GridView\.builder: Creates a scrollable grid of items dynamically.
+- SliverGridDelegateWithFixedCrossAxisCount: Specifies how many columns the grid should have.
+- Card: Displays each item inside a separate box.
+
+In your example:
+
+- If screen width is below 600 pixels, the grid displays 2 columns.
+- If screen width is 600 pixels or above, the grid displays 3 columns.
+
+## 3. Input and Search
+
+Purpose: To accept user input and respond when the input changes.
+
+- TextField: Allows users to enter text.
+- TextEditingController: Reads and manages the text entered by the user.
+- InputDecoration: Adds a label, hint, or border to the input field.
+- onChanged: Executes a function whenever the user changes the text.
+- setState(): Refreshes the UI when the data changes.
+
+In your example: The user enters text in the Search field, and `setState()` updates the screen.
+
+## 4. Form Validation
+
+Purpose: To check whether the user has entered valid information before submitting a form.
+
+- Form: Groups input fields together.
+- GlobalKey: Identifies and controls the form.
+- TextFormField: Accepts user input with validation support.
+- validator: Checks whether the entered value is valid.
+- ElevatedButton: Creates a clickable button.
+- validate(): Checks whether all form fields satisfy their validation rules.
+- result: Stores and displays the submission result.
+
+In your example: If the user leaves the name field empty, it displays "Enter value". If the field is filled, it displays "Success" after submission.
+
+## 5. Navigation
+
+Purpose: To move between different screens in a Flutter application.
+
+- Navigator.push(): Opens a new screen.
+- MaterialPageRoute: Defines the transition to the next screen.
+- SecondPage: Represents the second screen of the application.
+- Navigator.pop(): Returns to the previous screen.
+- ElevatedButton: Allows the user to trigger navigation by clicking a button.
+
+In your example: Clicking "Next Page" opens the second screen, and clicking "Go Back" returns to the first screen.
+
+## Quick revision for practical exam
+
+| Experiment             | Main purpose              | Important widgets             |
+| ---------------------- | ------------------------- | ----------------------------- |
+| 1. Widgets and Layouts | Arrange UI elements       | Card, Row, Column             |
+| 2. Responsive UI       | Adjust UI to screen size  | LayoutBuilder, GridView       |
+| 3. Input and Search    | Accept user input         | TextField, Controller         |
+| 4. Form Validation     | Validate user information | Form, TextFormField           |
+| 5. Navigation          | Move between screens      | Navigator.push, Navigator.pop |
+
+## Important: A few corrections in your code
+
+Your pasted code combines multiple experiment snippets. They cannot all be placed after the closing `}` of `HomePage`.
+
+Before running the complete application, make sure:
+
+1. The Card, GridView, TextField, Form and buttons are placed inside the `Column`'s `children` list.
+2. Declare `items`, `controller`, `formKey`, and `result` inside the appropriate class.
+3. Keep `SecondPage` outside the `HomePage` class.
+4. Close all brackets and parentheses correctly.
+
+Easy way to remember:
+
+- Card = Box
+- Row = Horizontal
+- Column = Vertical
+- GridView = Grid
+- TextField = Input
+- Form = Validation
+- Navigator = Screen changing
